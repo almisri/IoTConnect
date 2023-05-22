@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_hasil"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/latobold"
+            android:text="Pesanan "
+            android:textColor="#1F2E45"
+            android:textSize="16dp"
+            android:layout_marginLeft="19dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintStart_toEndOf="@+id/imageView9"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pesawat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/kotak"
+            android:layout_width="match_parent"
+            android:layout_height="136dp"
+            android:background="@drawable/kotak_daftar"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <ImageButton
+            android:id="@+id/tv_proses"
+            android:layout_width="80dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/btn_proses"
+            android:layout_marginLeft="140dp"
+            android:layout_marginBottom="23dp"
+            app:layout_constraintBottom_toBottomOf="@id/kotak"
+            app:layout_constraintEnd_toStartOf="@+id/tv_selesai"
+            />
+
+        <ImageButton
+            android:id="@+id/tv_selesai"
+            android:layout_width="80dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/btn_selesai"
+            app:layout_constraintBottom_toBottomOf="@id/kotak"
+            app:layout_constraintEnd_toEndOf="@+id/kotak" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:fontFamily="@font/latoregular"
+            android:text="Username : "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/kotak"
+            app:layout_constraintTop_toTopOf="@+id/kotak" />
+
+        <TextView
+            android:id="@+id/tv_nama_projek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:fontFamily="@font/latoregular"
+            android:layout_marginTop="8dp"
+            android:text="Pesanan     :  "
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/kotak"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_noTelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/latoregular"
+            android:text="No. Tel         :"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/kotak"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_projek" />
+
+        <ImageButton
+            android:id="@+id/tv_hapus"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/btn_hapus"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="@+id/kotak"
+            app:layout_constraintTop_toTopOf="@+id/imageView9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

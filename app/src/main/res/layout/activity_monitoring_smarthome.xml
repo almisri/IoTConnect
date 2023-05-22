@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonitoringSmarthomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                android:id="@+id/arrow_button"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:background="@drawable/backicon"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+            <TextView
+                android:id="@+id/text_MonitoringApp"
+                android:layout_width="148dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="26dp"
+                android:gravity="center"
+                android:text="Smart Home"
+                android:textColor="#263238"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/background_profile"
+                android:layout_width="fill_parent"
+                android:layout_height="132dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/kotakbiru2x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_MonitoringApp" />
+
+            <!--            android:background="@drawable/cuaca_hari_cerah"-->
+            <ImageView
+                android:id="@+id/iconcuaca"
+                android:layout_width="123dp"
+                android:layout_height="123dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintStart_toStartOf="@+id/background_profile"
+                app:layout_constraintTop_toTopOf="@+id/background_profile" />
+
+            <TextView
+                android:id="@+id/text_profile"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Selamat Datang Ahmad Ramli"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="108dp"
+                android:layout_marginRight="11dp"
+                app:layout_constraintEnd_toEndOf="@+id/background_profile"
+                app:layout_constraintStart_toStartOf="@+id/background_profile"
+                app:layout_constraintTop_toTopOf="@+id/background_profile" />
+
+            <TextView
+                android:id="@+id/text_temp"
+                android:layout_width="139.6dp"
+                android:layout_height="78.86dp"
+                android:text="24°C"
+                android:textColor="#FFFFFF"
+                android:textSize="47dp"
+                android:layout_marginTop="47dp"
+                android:layout_marginLeft="29dp"
+                app:layout_constraintBottom_toBottomOf="@+id/background_profile"
+                app:layout_constraintEnd_toEndOf="@+id/background_profile"
+                app:layout_constraintStart_toEndOf="@+id/iconcuaca"
+                app:layout_constraintTop_toTopOf="@+id/background_profile" />
+
+            <TextView
+                android:id="@+id/text_bagian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:layout_marginLeft="30dp"
+                android:text="Bagian "
+                android:textColor="#263238"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/background_profile" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="55dp"
+                android:foregroundGravity="center_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_bagian">
+
+
+                <ImageButton
+                    android:id="@+id/button_ruang_tamu"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/white_ruang_tamu"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageButton
+                    android:id="@+id/button_kamar_mandi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/white_kamar_mandi"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/button_dapur"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/white_dapur"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Mode"
+                android:textColor="#263238"
+                android:textSize="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="330dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

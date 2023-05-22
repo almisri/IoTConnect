@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/kotaklayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/profilecontainer"
+            android:clickable="false"
+            android:fontFamily="@font/latobold"
+            android:gravity="center"
+            android:text="JenisLayanan"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/latobold"
+        android:text="Pesanan Anda Telah Kami terima "
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/kotaklayanan"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotaklayanan" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/check_mark_vector"
+        app:layout_constraintEnd_toEndOf="@+id/kotaknama"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text1"
+        app:layout_constraintTop_toBottomOf="@+id/kotaklayanan"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/txtnamaprojek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:fontFamily="@font/latobold"
+        android:text="Nama Projek"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <TextView
+        android:id="@+id/kotaknama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/profilecontainer"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnamaprojek" />
+
+    <TextView
+        android:id="@+id/txtnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:text="Name"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaknama"
+        app:layout_constraintStart_toStartOf="@+id/kotaknama"
+        app:layout_constraintTop_toTopOf="@+id/kotaknama" />
+
+    <TextView
+        android:id="@+id/txtnomorproyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/latobold"
+        android:text="Nomor Telepon"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotaknama" />
+
+    <TextView
+        android:id="@+id/kotaknoproyek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/profilecontainer"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnomorproyek" />
+
+    <TextView
+        android:id="@+id/txtnoproyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:text="Nomor Telepon"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaknoproyek"
+        app:layout_constraintStart_toStartOf="@+id/kotaknoproyek"
+        app:layout_constraintTop_toTopOf="@+id/kotaknoproyek" />
+
+    <TextView
+        android:id="@+id/txtdeskripproyek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/latobold"
+        android:text="Deskripsi Proyek"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotaknoproyek" />
+
+    <TextView
+        android:id="@+id/kotakdeskrip"
+        android:layout_width="342dp"
+        android:layout_height="99dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/profilecontainer"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdeskripproyek" />
+
+    <TextView
+        android:id="@+id/txtdeskripsi"
+        android:layout_width="286dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:fontFamily="@font/latobold"
+        android:text="Deskripsi"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/kotakdeskrip"
+        app:layout_constraintTop_toTopOf="@+id/kotakdeskrip" />
+
+    <TextView
+        android:id="@+id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/latobold"
+        android:text="Silahkan Menghubungi Developer Kami"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/kotakdeskrip"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/kotakdeskrip"
+        app:layout_constraintTop_toBottomOf="@+id/kotakdeskrip" />
+
+
+    <TextView
+        android:id="@+id/txtnamadevelop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clickable="false"
+        android:fontFamily="@font/latobold"
+        android:text="Nama Developer"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teks2" />
+
+    <TextView
+        android:id="@+id/kotaknamadev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/profilecontainer"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnamadevelop" />
+
+    <TextView
+        android:id="@+id/txtnamadev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:text="Nama Developer"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaknamadev"
+        app:layout_constraintStart_toStartOf="@+id/kotaknamadev"
+        app:layout_constraintTop_toTopOf="@+id/kotaknamadev" />
+
+    <TextView
+        android:id="@+id/txtnodeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/latobold"
+        android:text="Nomor Developer"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kotaknamadev" />
+
+    <TextView
+        android:id="@+id/kotaknodev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/profilecontainer"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnodeveloper" />
+
+    <TextView
+        android:id="@+id/txtnodev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/latobold"
+        android:text="Nomor Developer"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/kotaknodev"
+        app:layout_constraintStart_toStartOf="@+id/kotaknodev"
+        app:layout_constraintTop_toTopOf="@+id/kotaknodev" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/kotaknodev" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+    <TextView
+        android:id="@+id/backIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/backicon"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

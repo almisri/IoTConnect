@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmartFarmActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/backIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/backicon"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/smarthome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SmartFarm"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:fontFamily="@font/latobold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/gambarsmarthome"
+            android:layout_width="326dp"
+            android:layout_height="217dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/gambar_smartfarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smarthome" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/icon_nama"
+            app:layout_constraintStart_toStartOf="@+id/gambarsmarthome"
+            app:layout_constraintTop_toBottomOf="@+id/gambarsmarthome" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/icon_nomor"
+            app:layout_constraintStart_toStartOf="@+id/gambarsmarthome"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="84dp"
+            android:background="@drawable/icon_desk"
+            app:layout_constraintStart_toStartOf="@+id/gambarsmarthome"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <ImageButton
+            android:id="@+id/btnReset"
+            android:layout_width="143dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_reset"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DeskripsiProjek" />
+
+        <ImageButton
+            android:id="@+id/btnKirim"
+            android:layout_width="143dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_send"
+            android:text="Kirim"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toEndOf="@+id/btnReset"
+            app:layout_constraintTop_toBottomOf="@+id/DeskripsiProjek" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Nama Projek"
+            android:textColor="#263238"
+            android:textStyle="bold"
+            android:fontFamily="@font/latobold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/gambarsmarthome" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="88dp"
+            android:text="Nomor Telepon"
+            android:textColor="#263238"
+            android:textStyle="bold"
+            android:fontFamily="@font/latobold"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="90dp"
+            android:text="Deskripsi projek"
+            android:textColor="#263238"
+            android:textStyle="bold"
+            android:fontFamily="@font/latobold"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/NamaProjek"
+            android:layout_width="328dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="56dp"
+            android:paddingStart="10dp"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/kotakform"
+            android:hint="Ketikkan sesuatu"
+            android:fontFamily="@font/latoregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.602"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gambarsmarthome" />
+
+        <EditText
+            android:id="@+id/DeskripsiProjek"
+            android:layout_width="328dp"
+            android:layout_height="144dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/kotakform"
+            android:gravity="start"
+            android:hint="Ketikkan sesuatu"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:fontFamily="@font/latoregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teleponProject" />
+
+        <EditText
+            android:id="@+id/teleponProject"
+            android:layout_width="328dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="31dp"
+            android:background="@drawable/kotakform"
+            android:hint="+62"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/latoregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NamaProjek" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@id/btnReset"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

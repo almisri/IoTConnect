@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="Iot Connect"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SignupLoginRealtime"
+        tools:targetApi="31">
+        <activity
+            android:name=".admin_daftar_pesanan"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".IsiNotifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Pengajuan_pesanan"
+            android:exported="false" />
+        <activity
+            android:name=".layanan_belum_tersedia"
+            android:exported="false" />
+        <activity
+            android:name=".test_recycle"
+            android:exported="false" />
+        <activity
+            android:name=".MonitoringCustomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_pengairan"
+            android:exported="false" />
+        <activity
+            android:name=".MonitoringSmartfishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_bayam"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_ruang_tamu"
+            android:exported="false" />
+        <activity
+            android:name=".GantiPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonitoringSmartfarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_palang"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_pagar"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_pintu"
+            android:exported="false" />
+        <activity
+            android:name=".MonitoringSmarthomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IsiNotifikasiActivity_backup"
+            android:exported="false" />
+        <activity
+            android:name=".TataCaraPenggunaanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BlmPesanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartFishingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartFarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SmartHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardToMonitoringActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

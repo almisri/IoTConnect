@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_hasil"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/kotak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/containerdashboardmonitoring"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:fontFamily="@font/latobold"
+            android:text="Smarthome"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kotak"
+            app:layout_constraintStart_toStartOf="@+id/kotak"
+            app:layout_constraintTop_toTopOf="@+id/kotak" />
+
+        <TextView
+            android:id="@+id/tv_count_pengajuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:fontFamily="@font/latobold"
+            android:text=""
+            android:textColor="#C3B32B"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kotak"
+            app:layout_constraintEnd_toStartOf="@+id/run_activity"
+            app:layout_constraintTop_toTopOf="@+id/kotak" />
+        <TextView
+            android:id="@+id/tv_count_proses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:fontFamily="@font/latobold"
+            android:text=""
+            android:textColor="#11A454"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/kotak"
+            app:layout_constraintEnd_toStartOf="@+id/tv_count_pengajuan"
+            app:layout_constraintTop_toTopOf="@+id/kotak" />
+
+        <ImageButton
+            android:id="@+id/run_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/righticon"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/kotak"
+            app:layout_constraintEnd_toEndOf="@+id/kotak"
+            app:layout_constraintTop_toTopOf="@+id/kotak" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FFA500</color>
+    <color name="grey">#FF424242</color>
+    <color name="buttongrey">#10506E</color>
+    <color name="loginfield">#D9D9D9</color>
+    <color name="loginbtn">#263238</color>
+    <color name="layananborder">#CACACA</color>
+    <color name="blue">#146C94</color>
+    <color name="greybtn">#CECECE</color>
+    <color name="bluebtn">#19A7CE</color>
+    <color name="greynotregis">#8A8F92</color>
+    <color name="colorvector">#8A8F92</color>
+    <color name="monitoringbtn">#3D94FF</color>
+    <color name="xmlbg">#F9F9F9</color>
+    <color name="profilename">#CACACA</color>
+    <color name="lavender">#8692f7</color>
+    <color name="smoothblack">#222222</color>
+
+
+</resources>

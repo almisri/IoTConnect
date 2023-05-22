@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xmlbg"
+    tools:context=".DashboardActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <androidx.viewpager2.widget.ViewPager2
+                            android:id="@+id/viewPager"
+                            android:layout_width="match_parent"
+                            android:layout_height="184dp"
+                            android:layout_margin="30dp"
+                            android:layout_marginTop="17dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.266"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.015" />
+
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/latobold"
+                            android:text="Daftar Layanan"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.057"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/kotak"
+                            android:layout_width="302dp"
+                            android:layout_height="423dp"
+                            android:layout_marginTop="35dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView24">
+
+
+                                <ImageView
+                                    android:id="@+id/container1"
+                                    android:layout_width="136.36dp"
+                                    android:layout_height="192.15dp"
+                                    android:background="@drawable/containerdashboard"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/txtsmarthome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/latobold"
+                                    android:text="Smarthome"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.55dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="@+id/container1"
+                                    app:layout_constraintStart_toStartOf="@+id/container1"
+                                    app:layout_constraintTop_toTopOf="@+id/container1" />
+
+                                <ImageView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="49.09dp"
+                                    android:layout_height="76.51dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/smarthomeicon"
+                                    app:layout_constraintEnd_toEndOf="@+id/container1"
+                                    app:layout_constraintStart_toStartOf="@+id/container1"
+                                    app:layout_constraintTop_toBottomOf="@+id/txtsmarthome" />
+
+                                <Button
+                                    android:id="@+id/smarthomebtn"
+                                    android:layout_width="106dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:backgroundTint="@color/monitoringbtn"
+                                    android:fontFamily="@font/latoregular"
+                                    android:text="Selengkapnya"
+                                    android:textAllCaps="false"
+                                    android:textSize="10dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/container1"
+                                    app:layout_constraintEnd_toEndOf="@+id/container1"
+                                    app:layout_constraintStart_toStartOf="@+id/container1" />
+
+                                <ImageView
+                                    android:id="@+id/container2"
+                                    android:layout_width="136.36dp"
+                                    android:layout_height="192.15dp"
+                                    android:background="@drawable/containerdashboard"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="@+id/container1" />
+
+                                <TextView
+                                    android:id="@+id/textView34"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/latobold"
+                                    android:text="Smartfarm"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.55dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="@+id/container2"
+                                    app:layout_constraintStart_toStartOf="@+id/container2"
+                                    app:layout_constraintTop_toTopOf="@+id/container2" />
+
+                                <ImageView
+                                    android:id="@+id/textView36"
+                                    android:layout_width="76dp"
+                                    android:layout_height="76dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/smartfarmicon"
+                                    app:layout_constraintEnd_toEndOf="@+id/container2"
+                                    app:layout_constraintStart_toStartOf="@+id/container2"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                                <Button
+                                    android:id="@+id/smartfarmbtn"
+                                    android:layout_width="106dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:backgroundTint="@color/monitoringbtn"
+                                    android:fontFamily="@font/latoregular"
+                                    android:text="Selengkapnya"
+                                    android:textAllCaps="false"
+                                    android:textSize="10dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/container2"
+                                    app:layout_constraintEnd_toEndOf="@+id/container2"
+                                    app:layout_constraintStart_toStartOf="@+id/container2" />
+
+                                <ImageView
+                                    android:id="@+id/container3"
+                                    android:layout_width="136.36dp"
+                                    android:layout_height="192.15dp"
+                                    android:layout_marginTop="30dp"
+                                    android:background="@drawable/containerdashboard"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/container1" />
+
+                                <TextView
+                                    android:id="@+id/textView37"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/latobold"
+                                    android:text="Smartfishing"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.55dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="@+id/container3"
+                                    app:layout_constraintStart_toStartOf="@+id/container3"
+                                    app:layout_constraintTop_toTopOf="@+id/container3" />
+
+                                <ImageView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="61.82dp"
+                                    android:layout_height="76.36dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/smartfishingicon"
+                                    app:layout_constraintEnd_toEndOf="@+id/container3"
+                                    app:layout_constraintStart_toStartOf="@+id/container3"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+
+                                <Button
+                                    android:id="@+id/smartfishingbtn"
+                                    android:layout_width="106dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:backgroundTint="@color/monitoringbtn"
+                                    android:fontFamily="@font/latoregular"
+                                    android:text="Selengkapnya"
+                                    android:textAllCaps="false"
+                                    android:textSize="10sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/container3"
+                                    app:layout_constraintEnd_toEndOf="@+id/container3"
+                                    app:layout_constraintStart_toStartOf="@+id/container3" />
+
+                                <ImageView
+                                    android:id="@+id/container4"
+                                    android:layout_width="136.36dp"
+                                    android:layout_height="192.15dp"
+                                    android:background="@drawable/containerdashboard"
+                                    app:layout_constraintEnd_toEndOf="@+id/container2"
+                                    app:layout_constraintTop_toTopOf="@+id/container3" />
+
+                                <TextView
+                                    android:id="@+id/textView29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/latobold"
+                                    android:text="Custom"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.55dp"
+                                    android:textStyle="bold"
+                                    app:layout_constraintEnd_toEndOf="@+id/container4"
+                                    app:layout_constraintStart_toStartOf="@+id/container4"
+                                    app:layout_constraintTop_toTopOf="@+id/container4" />
+
+                                <ImageView
+                                    android:layout_width="47.27dp"
+                                    android:layout_height="51.52dp"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/customicon"
+                                    app:layout_constraintEnd_toEndOf="@+id/container4"
+                                    app:layout_constraintStart_toStartOf="@+id/container4"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                                <Button
+                                    android:id="@+id/custombtn"
+                                    android:layout_width="106dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginTop="182dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:backgroundTint="@color/monitoringbtn"
+                                    android:fontFamily="@font/latoregular"
+                                    android:text="Selengkapnya"
+                                    android:textAllCaps="false"
+                                    android:textSize="10dp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/container4"
+                                    app:layout_constraintEnd_toEndOf="@+id/container4"
+                                    app:layout_constraintStart_toStartOf="@+id/container4" />
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            app:layout_constraintTop_toBottomOf="@id/kotak" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/homeicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/homeicon"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/monitoringicon"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="85dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/monitoringicon"
+            android:layout_width="68dp"
+            android:layout_height="89.98dp"
+            android:layout_marginTop="490dp"
+            android:background="@drawable/iotconnecticon"
+            android:clickable="true"
+            android:layout_marginBottom="34.02dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/profileicon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/profileicon"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="22dp"
+            android:layout_marginRight="85dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/monitoringicon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

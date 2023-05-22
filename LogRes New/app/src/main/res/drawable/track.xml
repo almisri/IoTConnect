@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <bitmap android:src="@drawable/switch_off_track"
+             />
+<!--        <corners android:radius="100dp" />-->
+<!--        <size android:width="63dp"-->
+<!--            android:height="28.54dp" />-->
+    </item>
+    <item android:state_checked="true">
+        <bitmap android:src="@drawable/switch_on_track"
+             />
+<!--        <corners android:radius="100dp" />-->
+<!--        <size android:width="63dp"-->
+<!--            android:height="28.54dp" />-->
+<!--            -->
+    </item>
+</selector>
